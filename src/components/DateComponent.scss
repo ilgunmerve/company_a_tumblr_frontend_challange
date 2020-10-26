@@ -1,7 +1,6 @@
 @import '../main.scss';
 
 $day-color: #ccc;
-$date-container-color: #6498cc;
 $date-container-text: #bbd5f1;
 
 .date-box{
@@ -13,6 +12,7 @@ $date-container-text: #bbd5f1;
     text-transform: uppercase;
     margin: auto;
     margin-top: 0px;
+    margin-left: 150px;
     padding: $default-padding;
 }
 
@@ -20,7 +20,7 @@ $date-container-text: #bbd5f1;
     display: block;
     text-align: center;
     line-height:  10px;
-    background-color: $date-container-color;
+    background-color: $primary-blue;
     color: $date-container-text;
     text-transform: uppercase;
     margin: auto;

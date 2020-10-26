@@ -1,6 +1,7 @@
-$quote-color: #888;
-$quote-source-color: #555;
+$text-color: #888;
+$source-color: #555;
 $default-padding: 4px;
+$primary-blue: #6498cc;
 
 .App {
     
@@ -11,7 +12,7 @@ $default-padding: 4px;
         margin: 20px auto; //20px auto;
         border-bottom: solid 1px #ccc;  // Line below the title
         font-size: 50px;
-        font: Bold;  // 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        //font: Bold;  // 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         // letter-spacing: -4px;
         // line-height: 50px;
         position: relative;
@@ -29,7 +30,7 @@ $default-padding: 4px;
         width: 10%;
         float: right;
         text-align: right;
-        color: $quote-color;
+        color: $text-color;
         font: Bold;
     }
 }

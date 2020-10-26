@@ -54,7 +54,7 @@
         "quote-text"?: string;
         "quote-source"?: string;
         tags?: string[];
-        // "photo-caption": string;
+        "photo-caption"?: string;
         // width?: number;
         // height?: number;
         "photo-url-1280"?: string;
@@ -67,9 +67,9 @@
         // "link-text"?: string;
         // "link-url"?: string;
         // "link-description"?: string;
-        // "conversation-title"?: any;
-        // "conversation-text"?: string;
-        // conversation?: Conversation[];
+        "conversation-title"?: any;
+        "conversation-text"?: string;
+        conversation?: Conversation[];
         // "reblogged-from-url"?: string;
         // "reblogged-from-name"?: string;
         // "reblogged-from-title"?: string;

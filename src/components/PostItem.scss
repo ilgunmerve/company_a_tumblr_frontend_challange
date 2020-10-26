@@ -1,13 +1,14 @@
 @import '../main.scss';
 
 .Post-Container{
-    margin: 10px auto;
+    margin: 10px 10px 5px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: $default-padding;
 }
 
-.Post-Detail{
-
+.Post-Detail {
+    flex-grow: 2;
 }
+

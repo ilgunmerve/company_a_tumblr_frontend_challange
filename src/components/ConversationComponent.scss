@@ -1,0 +1,26 @@
+@import '../main.scss';
+
+.conversationList {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 0px 1px;
+    border-left: solid 5px #bbb;
+
+    li {
+        padding: 4px 10px 4px 8px;
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+    li:nth-child(odd) {
+        background-color: #f4f4f4;
+        .label {
+            color:red;
+        }
+    }
+    li:nth-child(even) {
+        background-color: #e8e8e8;
+        .label {
+            color:blue;
+        }
+    }
+}

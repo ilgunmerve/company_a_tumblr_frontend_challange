@@ -17,7 +17,7 @@ const DateComponent = (props: DateProps) =>{
             <p>{days[date.getDay()]}</p>
             <div className="month-box">
                 <p>{months[date.getMonth()]}</p>
-                <p>{date.getDate()}TH</p>
+                <p>{date.getDate()}</p>
             </div>
         </div>
     );
