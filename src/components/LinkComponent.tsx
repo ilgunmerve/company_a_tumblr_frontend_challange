@@ -1,15 +1,20 @@
 import React from 'react';
-//import './QuoteComponent.scss'; 
+import './LinkComponent.scss'; 
 
 interface LinkComponentProps{
-
+    linkText?: string;
+    linkDescription?: any;
+    linkUrl?: string;
 }
 
 const LinkComponent =(props: LinkComponentProps)=>{
 
-    return (
-        <>
+    const {linkDescription, linkText, linkUrl} = props;
 
+    return (
+        <>  
+            <a className="link" href={linkUrl}>{linkText}</a>
+            <div dangerouslySetInnerHTML={{__html: linkDescription}}></div>
         </>
     );
 }

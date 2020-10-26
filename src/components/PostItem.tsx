@@ -7,6 +7,8 @@ import PhotoComponent from './PhotoComponent';
 
 import './PostItem.scss';
 import ConversationComponent from './ConversationComponent';
+import LinkComponent from './LinkComponent';
+import AudioComponent from './AudioComponent';
 
 interface PostItemProps {
     post: IPost;
@@ -21,11 +23,11 @@ const PostItem = (props: PostItemProps) =>{
             case 'photo':
                 return <PhotoComponent photo-url-500={post["photo-url-500"]} photo-caption={post["photo-caption"]} />;
             case 'link':
-                return 'bar';
+                return <LinkComponent linkDescription={post["link-description"]} linkText={post["link-text"]} linkUrl={post["link-url"]}/>;
             case 'conversation':
                 return <ConversationComponent conversation={post.conversation}/>; 
             case 'audio':
-                return ''; 
+                return <AudioComponent audioCaption={post["audio-caption"]} audioPlayer={post["audio-player"]} />; 
             case 'regular':
                 return <RegularComponent regular-title={post["regular-title"]} regular-body={post["regular-body"]}/>; 
             case 'quote':

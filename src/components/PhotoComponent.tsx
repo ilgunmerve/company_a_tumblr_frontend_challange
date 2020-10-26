@@ -2,14 +2,13 @@ import React from 'react';
 //import './QuoteComponent.scss'; 
 
 interface PhotoComponentProps{
-    "photo-url-1280"?: string;
     "photo-url-500"?: string;
     "photo-caption"?: any;
 }
 
 const PhotoComponent =(props: PhotoComponentProps)=>{
 
-    const { "photo-url-1280": photo_url_1280, "photo-url-500": photo_url_500, "photo-caption": photo_caption} = props;
+    const { "photo-url-500": photo_url_500, "photo-caption": photo_caption} = props;
 
     return (
         <>

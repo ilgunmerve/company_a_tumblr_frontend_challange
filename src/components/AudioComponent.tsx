@@ -2,16 +2,20 @@ import React from 'react';
 //import './QuoteComponent.scss'; 
 
 interface AudioComponentProps{
-    "regular-title"?:  string;
-    "regular-body"?: string;
+    audioCaption?:  any;
+    audioPlayer?: string;
 }
 
 const AudioComponent =(props: AudioComponentProps)=>{
 
-    const { "regular-title": regular_title, "regular-body": regular_body} = props;
+    const { audioCaption, audioPlayer} = props;
 
     return (
         <>
+            <div dangerouslySetInnerHTML={{__html: audioCaption}}></div>
+            <audio  src={audioPlayer} controls/>
+            {console.log(audioPlayer)}
+
 
         </>
     );

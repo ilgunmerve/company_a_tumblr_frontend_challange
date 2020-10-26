@@ -1,9 +1,9 @@
 import React from 'react';
-import './QuoteComponent.scss'; 
+import './RegularComponent.scss'; 
 
 interface ReqularComponentProps{
     "regular-title"?:  string | null;
-    "regular-body"?: string;
+    "regular-body"?: any;
 }
 
 const ReqularComponent =(props: ReqularComponentProps)=>{
@@ -13,7 +13,8 @@ const ReqularComponent =(props: ReqularComponentProps)=>{
     return (
         <>
             <p className="Regular-Header">{regular_title}</p>
-            <p className="Regular-Body">{regular_body}</p>
+            {/* <p className="Regular-Body">{regular_body}</p> */}
+            <div dangerouslySetInnerHTML={{__html: regular_body}} ></div>
         </>
     );
 }
