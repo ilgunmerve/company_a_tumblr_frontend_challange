@@ -1,0 +1,32 @@
+@import '../main.scss';
+
+$day-color: #ccc;
+$date-container-color: #6498cc;
+$date-container-text: #bbd5f1;
+
+.date-box{
+    display: flex;
+    font-size: 30px;
+    line-height: 10%;
+    max-height: 100px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 0px;
+    padding: $default-padding;
+}
+
+.month-box{
+    display: block;
+    text-align: center;
+    line-height:  10px;
+    background-color: $date-container-color;
+    color: $date-container-text;
+    text-transform: uppercase;
+    margin: auto;
+
+    p {
+        margin: 6px 2px;
+        font-size: small;
+    }
+}
