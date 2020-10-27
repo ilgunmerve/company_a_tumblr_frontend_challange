@@ -1,7 +1,7 @@
 @import '../main.scss';
 
 .Post-Container{
-    margin: 10px 10px 5px auto;
+    margin: 10px 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -12,3 +12,10 @@
     flex-grow: 2;
 }
 
+.Button-Pop {
+    color: white;
+    border-radius: 4px;
+    background: $primary-blue;
+    border: none;
+    height: 20px;
+}

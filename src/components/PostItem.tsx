@@ -4,11 +4,12 @@ import DateComponent from '../components/DateComponent'
 import QuoteComponent from './QuoteComponent';
 import RegularComponent from './RegularComponent';
 import PhotoComponent from './PhotoComponent';
-
 import './PostItem.scss';
 import ConversationComponent from './ConversationComponent';
 import LinkComponent from './LinkComponent';
 import AudioComponent from './AudioComponent';
+import { Link } from 'react-router-dom'
+import Modal from 'react-modal';
 
 interface PostItemProps {
     post: IPost;
@@ -33,7 +34,7 @@ const PostItem = (props: PostItemProps) =>{
             case 'quote':
                 return <QuoteComponent quote-source={post["quote-source"]} quote-text={post["quote-text"]} />; 
           default:
-            return 'foo';
+            return '';
         }
       }
 
@@ -42,13 +43,11 @@ const PostItem = (props: PostItemProps) =>{
             <DateComponent date={new Date(post.date)} />
             <div className="Post-Detail">
                 {renderSwitch(post.type)}
-
-                {/* {post.type} */}
-                {/* <p>{props.post.format}</p>    html */}
-                {/* <p>{props.post.slug}</p> */}
-                {/* <p>{props.post.tags}</p> */}
-                {/* <p>{props.post.tumblelog?.title}</p> */}
-                {/* <p>{props.post["quote-source"]}</p> */}
+            </div>
+            <div>
+                <Link target="_blank" to={`/posts/${post.id}`}>
+                    <button className="Button-Pop">{'>'}</button>
+                </Link>
             </div>
         </div>
     );

@@ -12,9 +12,6 @@ $primary-blue: #6498cc;
         margin: 20px auto; //20px auto;
         border-bottom: solid 1px #ccc;  // Line below the title
         font-size: 50px;
-        //font: Bold;  // 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        // letter-spacing: -4px;
-        // line-height: 50px;
         position: relative;
     }
 
@@ -27,22 +24,14 @@ $primary-blue: #6498cc;
     }
 
     .t-description{
-        width: 10%;
+        width: 80%;
         float: right;
         text-align: right;
         color: $text-color;
-        font: Bold;
+    }
+
+    .postCount {
+        text-align: center;
     }
 }
 
-
-//     font-family: Helvetica, Arial, sans-serif;
-//     font-weight: bold;
-//     color: #888;
-//     border-left: solid 5px #6498cc;
-//     padding-left: 10px;
-
-// font-size: 16px;
-//     font-weight: Bold;
-//     color: #555;
-//     margin-top: 5px;
